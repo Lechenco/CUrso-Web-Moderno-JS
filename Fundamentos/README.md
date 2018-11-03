@@ -10,3 +10,4 @@
 - Mathematical Operands
 - Hoisting
 - Destructuring
+- Var, Let, Const
