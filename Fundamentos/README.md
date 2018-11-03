@@ -6,3 +6,7 @@
 - Array
 - Object
 - Function
+- Relational operands
+- Mathematical Operands
+- Hoisting
+- Destructuring
