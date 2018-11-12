@@ -3,3 +3,6 @@
 - Arrow Fcuntion
 - Parametros e retorno
 - Função Bind
+- Função Construtora
+- Closure
+- Callback
