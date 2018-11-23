@@ -6,3 +6,4 @@
 - Função Construtora
 - Closure
 - Callback
+- Retorno
