@@ -1,9 +1,11 @@
 ## Conceitos de Funções em JS
 
-- Arrow Fcuntion
+- Arrow Function
 - Parametros e retorno
 - Função Bind
 - Função Construtora
 - Closure
 - Callback
 - Retorno
+- Factory Function vs Constuctor function
+- IIFE
