@@ -5,3 +5,5 @@
 - ForEach
 - Map 
 - Filter
+- Reduce
+- Concat
