@@ -3,3 +3,5 @@
 - Concepts
 - Basic Methods
 - ForEach
+- Map 
+- Filter
