@@ -6,5 +6,5 @@
 - Read JSON file
 - Write JSON file
 - package.json
-- Global 
+- Global
 - This
