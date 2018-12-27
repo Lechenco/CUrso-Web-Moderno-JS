@@ -5,3 +5,5 @@
 - Set
 - Tagged Template
 - Rest/Spread operator
+- Promise
+- Async/Await
