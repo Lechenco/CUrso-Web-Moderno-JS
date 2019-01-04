@@ -6,3 +6,4 @@
 - Class
 - Table
 - Form
+- Images
