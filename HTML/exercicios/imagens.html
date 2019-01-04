@@ -39,10 +39,50 @@
     </p>
 </div>
 
+<script>
+    const elementos = document.querySelectorAll('[wm-slider] > p')
+    const slides = Array.from(elementos)
+    exibirSlides(slides, slides[0])
+
+
+    function move(inicio, fim, passo, elem, callback) {
+        const newPos = inicio - passo
+        if(newPos >= fim) { 
+            elem.style.left = newPos + 'px'
+            setTimeout(() => move(newPos, fim, passo, elem, callback), 10)
+            
+        } else {
+            callback()
+        }
+    }
+
+    function exibirSlides(slides, slide) {
+        const inicio = innerWidth
+        const fim = -slide.clientWidth
+
+        slide.style.left = `${inicio}px`
+        slide.style.display = 'block'
+
+        move(inicio, fim, 5, slide, () => {
+            slide.style.display = 'none'
+            exibirSlides(slides, getProximo(slides, slide))
+        })
+    }
+
+    function getProximo(lista, atual) {
+        const i = lista.indexOf(atual) + 1
+        return i < lista.length ? lista[i] : lista[0] 
+    }
+
+</script>
+
 <style>
+    p {
+        position: absolute;
+        display: none;
+    }
     .circular {
         width: 513;
-        background-color: #444444;
     }
 
     .texto {
