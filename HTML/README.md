@@ -7,3 +7,4 @@
 - Table
 - Form
 - Images
+- Video
