@@ -31,7 +31,14 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        console.log(document.forms)
+        console.log(document.forms[0])
+        console.log(document.getElementsByName('pequisa'))
+        console.log(document.pesquisa)
+
+        document.pesquisa.q.value = 'Linux'
+
+        console.log(document.pesquisa.hl.selectedIndex)
     </script>
 </body>
 
