@@ -17,6 +17,12 @@
     <p class='numero'>5</p>
 
     <script>
-        // ...
+        $('#div2').before('<p>Antes 2</p>')
+        $('#div2').after('<p>Depois 2</p>')
+
+        // $('p.numero').wrap('<div>')
+        $('p.numero').wrapAll('<div id="div4">')
+        $('#div4').empty()
+        $('#div3, #div4').prev().remove()
     </script>
 </body>

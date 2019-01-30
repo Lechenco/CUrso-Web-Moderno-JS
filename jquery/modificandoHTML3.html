@@ -20,6 +20,12 @@
             { nome: 'Julia', nota: 9.7 }
         ]
         
-        // ...
+        const elementos = pessoas.map(pessoa => {
+            return $('<tr>').append(`<td>${pessoa.nome}</td>`)
+                .append(`<td>${pessoa.nota}</td>`)
+        })
+
+        const table = $('<table>').append(elementos)
+        $('#conteudo').append(table)
     </script>
 </body>
